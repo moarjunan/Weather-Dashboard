@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+  <section>
+    <h1>Weather Dashboard</h1>
+    <br>
+    <br>
+    <div>
+        <label for="city-input">Search For a City:</label>
+        <input type="text" id="city-input">
+        <button id="search-button">Search</button>
+    </div>
+    <br>
+
+    <section class="weather-container">
+        <div class="weather-card" id="current-weather-card">
+            <h2>Current Weather</h2>
+            <p>City: <span id="current-city"></span></p>
+            <p>Date: <span id="current-date"></span></p>
+            <p>Temperature: <span id="current-temperature"></span>&deg;F</p>
+            <p>Humidity: <span id="current-humidity"></span>%</p>
+            <p>Wind Speed: <span id="current-wind-speed"></span>m/s</s></p>
+            <p>Weather Icon: <img id="current-icon" alt="Current Weather Icon"></p>
+        </div>
+
+        <div class="weather-card" id="forecast-card">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-container">
+              
+            </div>
+            
+        </div>
+    </section>
+  <div class="search-history">
+    <h2>Search History</h2>
+    <div id="search-history-container">
+  </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="crossorigin="anonymous"></script>
+
+      <script src="./script.js"></script>
+    
+</body>
+</html>

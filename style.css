@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0; 
+    background: lightslategray;
+}
+
+h1 {
+    text-align: center;
+    background: purple;
+    color: white;
+    padding: 10px;
+    margin: 0; 
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2em;
+    background: gray; 
+}
+
+.weather-card {
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.weather-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+.weather-card p {
+    margin-bottom: 10px;
+}
+
+#city-input,
+#search-button {
+    box-shadow: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
+#search-button {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#forecast-card {
+    flex: 0 0 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: purple;
+    color: white;
+    margin: 20px 0; 
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.forecast-card p {
+    margin-bottom: 10px;
+}
+
+.search-history {
+    margin-top: 50px;
+}
+
+.search-history button {
+    margin-right: 5px;
+    box-sizing: 30px;
+    box-shadow: 20px;
+    border-radius: 20px;
+}
