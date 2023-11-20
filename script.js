@@ -28,7 +28,7 @@ searchButton.addEventListener("click", async function () {
     }
 
     try {
-        const currentWeatherResponse = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weather.APIKey}`);
+        const currentWeatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weather.APIKey}`);
         const currentWeatherData = await currentWeatherResponse.json();
 
         date.textContent = currentDate;
