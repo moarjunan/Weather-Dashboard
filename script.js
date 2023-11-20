@@ -28,7 +28,7 @@ searchButton.addEventListener("click", async function () {
     }
 
     try {
-        const currentWeatherResponse = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weather.APIKey}`);
+        const currentWeatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weather.APIKey}`);
         const currentWeatherData = await currentWeatherResponse.json();
 
         date.textContent = currentDate;
@@ -36,9 +36,9 @@ searchButton.addEventListener("click", async function () {
         temperature.textContent = kelvinToFahrenheit(currentWeatherData.main.temp);
         humidity.textContent = currentWeatherData.main.humidity;
         windSpeed.textContent = currentWeatherData.wind.speed;
-        icon.src = `http://openweathermap.org/img/w/${currentWeatherData.weather[0].icon}.png`;
+        icon.src = `https://openweathermap.org/img/w/${currentWeatherData.weather[0].icon}.png`;
 
-        const forecastResponse = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${weather.APIKey}`);
+        const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${weather.APIKey}`);
         const forecastData = await forecastResponse.json();
 
         forecastContainer.innerHTML = '';
@@ -47,7 +47,7 @@ searchButton.addEventListener("click", async function () {
             const forecast = forecastData.list[i];
             const forecastDate = dayjs(forecast.dt_txt).format("dddd, MMMM D, YYYY");
             const forecastTemp = kelvinToFahrenheit(forecast.main.temp) + "°F";
-            const forecastIcon = `http://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+            const forecastIcon = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
 
             const forecastCard = document.createElement("div");
             forecastCard.classList.add("forecast-container");
