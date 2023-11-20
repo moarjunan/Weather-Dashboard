@@ -10,6 +10,9 @@ This repository was created to record the creation of a weather dashboard. The p
 
 ![demo](/demo.png)
 
+https://moarjunan.github.io/Weather-Dashboard/
+
+
 Installation
 
 N/A
